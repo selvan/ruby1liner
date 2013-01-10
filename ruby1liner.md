@@ -1,8 +1,15 @@
 Ruby one liner
 ==============
 
-Content manipulation
---------------------
+### Open, Read & Close a file
+content = IO.read("<<file_name>>")
+
+
+## Data stream manipultion (like sed)
+
+
+#### Content manipulation
+
 * Comment all lines
 
     ruby -pe '$_="\# #{$_}"'
@@ -10,8 +17,8 @@ Content manipulation
     ruby -pe 'gsub(/^/, "\# #{$1}");'
 
 
-File operations
----------------
+#### File operations
+
 
 * Prepend before 1st line of a file
 
